@@ -19,5 +19,5 @@ For the bot to work, the site must have a secure https connection.
 Just create Telegram Bot and pass post data:
 ```php
     $bot = new TelegramBot();
-	$bot->Notify($data);
+    $bot->Notify($data);
 ```
