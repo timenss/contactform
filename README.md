@@ -18,6 +18,8 @@ For the bot to work, the site must have a secure https connection.
 #### Use with third party plugins
 Just create Telegram Bot and pass post data:
 ```php
-    $bot = new TelegramBot();
-    $bot->Notify($data);
+use Timen\ContactForm\Classes\TelegramBot;
+ ...
+$bot = new TelegramBot();
+$bot->Notify($data);
 ```
