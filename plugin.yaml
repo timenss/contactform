@@ -1,0 +1,6 @@
+plugin:
+    name: 'Contact Form'
+    description: 'timen.contactform::lang.plugin.description'
+    author: timen
+    icon: oc-icon-briefcase
+    homepage: 'https://ma64.ru'

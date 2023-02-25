@@ -1,0 +1,26 @@
+<form
+    role="form"
+    data-request="{{ __SELF__ }}::onSendData"
+    data-request-validate
+    data-request-success="this.reset(); "
+    data-request-flash
+>
+    {{ form_token() }}
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="form-control">
+    </div>
+ 
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" class="form-control form-phone" data-mask="{{__SELF__.property('mask')}}">
+    </div>
+ 
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" data-attach-loading>Send</button>
+    </div>
+
+    <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+    </div>
+</form>

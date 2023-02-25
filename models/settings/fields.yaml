@@ -1,0 +1,35 @@
+tabs:
+    fields:
+        bot_token:
+            label: 'timen.contactform::lang.settings.bot_token'
+            span: left
+            type: text
+            comment: 'timen.contactform::lang.settings.bot_token_comment'
+            tab: 'Telegram Bot'
+        bot_users:
+            label: 'timen.contactform::lang.settings.bot_users'
+            prompt: 'timen.contactform::lang.settings.bot_users_promt'
+            style: default
+            span: right
+            type: repeater
+            tab: 'Telegram Bot'
+            form:
+                fields:
+                    bu_user:
+                        label: 'timen.contactform::lang.settings.bu_user'
+                        span: auto
+                        type: text
+        domain:
+            label: 'timen.contactform::lang.settings.domain'
+            span: left
+            placeholder: 'https://mydomain.com'
+            type: text
+            commentAbove: 'timen.contactform::lang.settings.domain_commentAbove'
+            required: 1
+            tab: 'Telegram Bot'
+        activebot:
+            label: 'timen.contactform::lang.settings.activebot'
+            span: left
+            type: checkbox
+            commentAbove: 'timen.contactform::lang.settings.activebot_commentAbove'
+            tab: 'Telegram Bot'
