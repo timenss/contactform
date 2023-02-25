@@ -74,7 +74,7 @@ class TelegramBot extends Controller
 
     public function sendSelfData($info)
     {
-        $data = json_encode($info);
+        $data = urlencode(json_encode($info));
         $token = Settings::instance()->get('bot_token');
 
         $url = Settings::instance()->get('domain')."/tgbot/$token?text=".$data;
