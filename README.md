@@ -1,6 +1,6 @@
 # Contact Form plugin
 
-This plugin allows you to implement a contact form with the ability to send notifications to the Telegram bot.
+This plugin for October CMS allows you to implement a contact form with the ability to send notifications to the Telegram bot.
 
 Form component written including Bootstrap styles.
 
